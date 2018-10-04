@@ -28,16 +28,18 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
-      if (isDev && isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  }
+    extend (config) {
+      const vueLoader = config.module.rules.find((r) => {
+        return r.loader === 'vue-loader'
+      })
+      vueLoader.options.preLoaders = vueLoader.options.preLoaders || {}
+      vueLoader.options.preLoaders.i18n = 'yaml-loader'
+      vueLoader.options.loaders.i18n = '@kazupon/vue-i18n-loader'
+    },
+
+    vendor: ['vue-i18n']
+  },
+
+  plugins: ['~/plugins/i18n.js']
 }
 
