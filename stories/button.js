@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/vue'
-import RedButton from '~/components/atom/buttons/RedButton.vue'
+import RedButton from '~/components/atoms/buttons/RedButton.vue'
 
 storiesOf('Buttons', module)
   .add('Red Button', () => ({
