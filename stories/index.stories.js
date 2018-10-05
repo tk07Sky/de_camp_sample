@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 
-import './hello'
-import './button'
+import './hello.story'
+import './button.story'
 
 
 /* eslint-enable react/react-in-jsx-scope */

@@ -5,6 +5,6 @@ storiesOf('Buttons', module)
   .add('Red Button', () => ({
     components: { RedButton },
     render(h) {
-      return <RedButton label="ボタン"/>
+      return <RedButton>ボタン</RedButton>
     }
   }))
