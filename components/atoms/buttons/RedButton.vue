@@ -1,12 +1,10 @@
 <template lang="pug">
-  button.button-red.color-red {{ label }}
+  button.button-red.color-red
+    slot
 </template>
 
 <script>
 export default {
-  props: {
-    label: { type: String, required: true }
-  }
 }
 </script>
 

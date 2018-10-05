@@ -1,5 +1,11 @@
 import { configure, addDecorator } from '@storybook/vue'
 import Decorator from './Decorator.vue'
+import '@storybook/addon-console'
+import { setConsoleOptions } from '@storybook/addon-console'
+
+setConsoleOptions({
+  panelExclude: []
+})
 
 addDecorator((story) => ({
   components: { Decorator },
