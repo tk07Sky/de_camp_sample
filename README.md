@@ -1,23 +1,19 @@
 # de_camp_sample
 
-> Nuxt.js project
+2018年秋に行ったde開発合宿の成果物
+一応qiitaにまとめた
 
-## Build Setup
+> [Nuxt.jsにi18nを導入してみる](https://qiita.com/tk07Sky/items/88724fea9fd119cee44f)
+
+> [Nuxt.jsにStorybookを導入してみる](https://qiita.com/tk07Sky/items/11c941d4c4d3ed8a322a)
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
+# nodeパッケージインストール
+$ yarn
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# 起動 at 3000
+$ yarn dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
-$ npm run generate
+# Storybook起動 at 6006
+$ yarn storybook
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
